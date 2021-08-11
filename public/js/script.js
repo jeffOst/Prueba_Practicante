@@ -8,5 +8,5 @@ $(document).ready(function() {
       $('a[aria-expanded=true]').attr('aria-expanded', 'false');
       document.getElementById("bodyContent").style.width="100%";
     });
-    funCargarURL();
+    
 });

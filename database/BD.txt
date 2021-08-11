@@ -1,0 +1,32 @@
+create database prueba_practicante;
+use prueba_practicante;
+
+create table rol(
+	id_rol int primary key auto_increment,
+	nombre_rol varchar(50)
+);
+
+create table usuario(
+	id int primary key auto_increment,
+	usuario varchar(100)
+	clave varchar(100),
+	id_rol int,
+	FOREIGN KEY (id_rol) REFERENCES rol(id_rol),	
+	nombre varchar(100),
+	apellidos varchar(100),
+	correo varchar(100)
+);
+
+
+insert into rol (id_rol, nombre_rol) values (1, "administrador");
+insert into rol (id_rol, nombre_rol) values (2, "usuario");
+
+insert into usuario(usuario, clave, id_rol, nombre, apellidos, correo)
+values ("jperez", "123", 1, "juan", "perez", "jperez@gmail.com");
+insert into usuario(usuario, clave, id_rol, nombre, apellidos, correo)
+values ("lsanchez", "123", 2, "luis", "sanchez", "lsanchez@gmail.com");
+insert into usuario(usuario, clave, id_rol, nombre, apellidos, correo)
+values ("lmessi", "123", 2, "leonel", "messi", "lmessi@gmail.com");
+insert into usuario(usuario, clave, id_rol, nombre, apellidos, correo)
+values ("jcapcha", "123", 2, "juan", "capcha", "jcapcha@gmail.com");
+

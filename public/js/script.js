@@ -8,13 +8,5 @@ $(document).ready(function() {
       $('a[aria-expanded=true]').attr('aria-expanded', 'false');
       document.getElementById("bodyContent").style.width="100%";
     });
+    funCargarURL();
 });
-
-
-//Funcion que pregunta antes de eliminar un usuario
-function funCargarURL(url){
-  var respuesta = confirm("¿Esta seguro que desea eliminar este Usuario?");
-  if (respuesta) {
-      parent.location=url;
-  }
-}

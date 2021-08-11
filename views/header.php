@@ -12,7 +12,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Importar iconos-->
     <script src="<?php echo constant('URL') ?>public/js/icons.js"></script>
-	<script src="<?php echo constant('URL') ?>public/js/script.js"></script>
+	<script src="<?php echo constant('URL') ?>public/js/eliminar_user.js"></script>
     <title>Panel de Administrador</title>
 </head>
 

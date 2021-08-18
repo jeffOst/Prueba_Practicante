@@ -23,48 +23,7 @@
 		</div>
 	</div>		
 
-	<script>
-			
-		function validar()
-		{
-			if($('#user').val() =="" || $('#pass').val() =="")
-			{
-			swal({
-				text: "Campos Vacíos. \nAsegurece de llenar todos los campos",
-				icon: "warning",
-				});          
-			}else
-			{
-				autenticar();
-			}
-		}
-
-		function autenticar()
-		{
-			var datos={
-			"action" : "autenticar",
-			"txtUser" : $("#user").val(),
-			"txtPass" : $("#pass").val(),
-			};
-
-			$.ajax({ url: '<?php echo constant('URL')?>login',
-				data: datos,
-				type: 'post',
-				success: function(data)
-				{
-					if(data=="true"){
-						window.location.replace("<?php echo constant('URL')?>inicio");
-					}else{
-						swal({
-							text: "El nombre del usuario y/o contraseña es incorrecto",
-							icon: "warning",
-						});
-					}
-				}
-			});
-		}
-
-	</script>
+	<script src="public/js/login.js"></script>
 	
 </body>
 </html>

@@ -1,3 +1,4 @@
+/*
 function validar()
 		{
 			if($('#user').val() =="" || $('#pass').val() =="")
@@ -12,8 +13,28 @@ function validar()
 			}
 		}
 
-		function autenticar()
-		{
+*/
+
+		
+
+$("#login").submit(function(e){
+    e.preventDefault();
+
+    if($('#user').val() =="" || $('#pass').val() =="")
+	{
+		swal({
+			text: "Campos Vacíos. \nAsegurece de llenar todos los campos",
+			icon: "warning",
+			});          
+	}else{
+		autenticar();
+    }
+
+});     
+
+
+function autenticar()
+{
 			var datos={
 			"action" : "autenticar",
 			"txtUser" : $("#user").val(),
@@ -28,7 +49,11 @@ function validar()
 				type: 'post',
 				success: function(data)
 				{
-					if(data=="true"){
+				
+				data=JSON.parse(data)
+                //console.log("responsive serve"+data);
+
+                if(data == true){
 						//alert(window.location.href);
 						window.location.replace(inicio);
 					}else{
@@ -39,4 +64,4 @@ function validar()
 					}
 				}
 			});
-		}
+}

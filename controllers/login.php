@@ -60,12 +60,12 @@ class Login extends Controlador
 			$_SESSION['usuario']=$_POST["txtUser"];
 			$_SESSION['rol']= $fila['id_rol'];
 			
-			echo "true";
+			echo json_encode(true);
 		}
 		else
 		{
 			//ERROR AL INICIAR SESION
-			echo "false";
+			echo json_encode(false);
 		}
 				
 	}

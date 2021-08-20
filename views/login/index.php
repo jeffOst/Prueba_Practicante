@@ -16,11 +16,11 @@
 		<div class="titulo">
 			<h1>Iniciar <span>Sesion</span></h1>
 		</div>
-		<div class="form_login">		
-			<p><label>USUARIO: </label><br><br><input type="text" id="user" placeholder="Ingrese su Usuario" required="" class="input" ></p>
-			<p><label>CONTRASEÑA:  </label><br><br><input type="password" id="pass" placeholder="Ingrese su Contraseña" required="" class="input"></p>
-			<button class="btn_submit" onclick="validar()">Iniciar Sesion</button>
-		</div>
+		<form class="form_login" method="POST" id="login">		
+			<p><label>USUARIO: </label><br><br><input type="text" id="user" placeholder="Ingrese su Usuario" class="input" ></p>
+			<p><label>CONTRASEÑA:  </label><br><br><input type="password" id="pass" placeholder="Ingrese su Contraseña" class="input"></p>
+			<button type="submit" class="btn_submit">Iniciar Sesion</button>
+		</form>
 	</div>		
 
 	<script src="public/js/login.js"></script>

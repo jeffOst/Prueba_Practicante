@@ -9,7 +9,7 @@
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--Ajax-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Importar iconos-->
     <script src="<?php echo constant('URL') ?>public/js/icons.js"></script>
 	<script src="<?php echo constant('URL') ?>public/js/eliminar_user.js"></script>
@@ -25,7 +25,6 @@
       header("Location: ".constant('URL')."");
     }
 ?>
-
 
 <body>
 

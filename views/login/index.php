@@ -5,13 +5,13 @@
 	<title>INICIO DE SESION</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo constant('URL') ?>public/css/login.css">
 	<!--Sweet Alert-->
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<!--Ajax-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 </head>
 <body>
 
-	<br><br><br>	
+	<br><br><br><br>	
 	<div class="container">
 		<div class="titulo">
 			<h1>Iniciar <span>Sesion</span></h1>
@@ -23,7 +23,7 @@
 		</form>
 	</div>		
 
-	<script src="public/js/login.js"></script>
+	<script defer src="public/js/login.js"></script>
 	
 </body>
 </html>
